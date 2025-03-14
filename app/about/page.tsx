@@ -1,23 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import AboutBanner from "@/components/about/about-banner"
+import AboutContent from "@/components/about/about-content"
+import TeamSection from "@/components/about/team-section"
+import PageTransition from "@/components/page-transition"
 
-const AboutPage = () => {
-  const [isClient, setIsClient] = useState(false);
+export const metadata = {
+  title: "About Us | InfinityWebWorks.co",
+  description:
+    "Learn about InfinityWebWorks.co, our mission, vision, and the team behind our innovative web solutions.",
+}
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
+export default function AboutPage() {
   return (
-    <div>
-      <h1>About Us</h1>
-      {isClient && (
-        <p>
-          This content is only rendered on the client side.
-          {/* Your client-side code that uses window object */}
-        </p>
-      )}
-    </div>
-  );
-};
+    <PageTransition>
+      <AboutBanner />
+      <AboutContent />
+      <TeamSection />
+    </PageTransition>
+  )
+}
 
-export default AboutPage;
