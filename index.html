@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Web Page</title>
+  <link rel="stylesheet" href="styles/globals.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <div id="scroll-container" data-scroll-container>
+    <!-- Sections for neon glow effects -->
+    <section data-scroll-section>
+      <div class="neon-glow">Neon Glow Effect</div>
+    </section>
+    <!-- Sections for 3D elements -->
+    <section data-scroll-section>
+      <div id="threejs-container"></div>
+    </section>
+    <!-- Sections for dynamic cursor effects -->
+    <section data-scroll-section>
+      <button class="hover-button">Hover Me</button>
+    </section>
+    <!-- Sections for glitch animations -->
+    <section data-scroll-section>
+      <h2 class="glitch" data-text="Glitch Effect">Glitch Effect</h2>
+    </section>
+    <!-- Sections for bold text and image reveals -->
+    <section data-scroll-section>
+      <h2 data-aos="fade-up">Reveal Animation</h2>
+      <img src="image.jpg" data-aos="fade-in">
+    </section>
+  </div>
+  <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

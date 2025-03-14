@@ -1,0 +1,25 @@
+/* AOS animations */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Locomotive Scroll */
+[data-scroll-container] {
+  overflow: hidden;
+}
+
+/* Framer Motion button hover effect */
+.motion-button {
+  transition: transform 0.3s ease;
+}
+
+/* Page transition effect */
+body.page-transition {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}

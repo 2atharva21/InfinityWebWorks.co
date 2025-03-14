@@ -1,0 +1,28 @@
+/* .floating {
+  animation: float 10s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+:local(.root) {
+  --background-light: rgba(255, 255, 255, 0.6);
+  --background-dark: rgba(0, 0, 0, 0.6);
+}
+
+body.light-mode .floating {
+  backdrop-filter: blur(10px);
+  background: var(--background-light);
+}
+
+body.dark-mode .floating {
+  backdrop-filter: blur(10px);
+  background: var(--background-dark);
+} */
